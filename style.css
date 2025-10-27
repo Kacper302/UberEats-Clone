@@ -4,30 +4,69 @@
     box-sizing: border-box;
     font-family: Sans-serif;
 }
+body{
+    height: 300vh;
+}
 nav{
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     height: 7vh;
     display: flex;
     justify-content: space-between;
-    
+    position: fixed;
     align-items: center;
+
 }
 .btn-menu{
     background-color: transparent;
     border-radius: 50%;
     border: none;
-    height: 7vh;
     margin-right: 25px;
+    cursor: pointer;
 }
 .span-menu{
     margin-left: 25px;
 }
 .span-register{
     margin-right: 25px;
-    height: 7vh;
+    
 }
-.btn-Login .btn-register{
-    height: 7vh;
-    margin: 15px;
+.span-menu, .span-register {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.span-menu a, .span-register a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn-Login, .btn-register {
+    height: auto;
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+}
+.btn-Login{
+    color: black;
+    background-color: white ;
+    &:hover{
+        background-color: rgb(235, 227, 227);
+    }
+}
+.btn-register{
+    color: white;
+    background-color: black;
+    &:hover{
+        background-color: rgb(65, 63, 63);
+    }
+}
+header{
+    height: 100vh;
+    background-image: url(baner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
