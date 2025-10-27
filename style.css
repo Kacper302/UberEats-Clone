@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+.btn-menu{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    height: 7vh;
+    margin-right: 25px;
+}
+.span-menu{
+    margin-left: 25px;
+}
+.span-register{
+    margin-right: 25px;
+    height: 7vh;
+}
+.btn-Login .btn-register{
+    height: 7vh;
+    margin: 15px;
+}
