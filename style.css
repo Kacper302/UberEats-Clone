@@ -70,7 +70,7 @@ nav{
 }
 header{
     height: 100vh;
-    background-image: url(baner.jpg);
+    background-image: url(img/baner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -163,4 +163,41 @@ height: 76px;
 }
 .span-dropdown{
     margin-left: 15px;
+}
+.paragraph-Login{
+    margin: 25px;
+    font-size: 20px;
+}
+
+.paragraph-Login a{
+    
+    color: black;
+}
+.block-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 150px 0;
+    
+}
+.menu-block{
+    width: 30%;
+    margin: 0 20px;
+}
+
+.menu-block img{
+    width: 100%;
+}
+
+.menu-block h2{
+ font-weight: 700;
+ font-size: 35px;
+ margin-bottom: 20px;
+}
+
+.menu-block p{
+    font-size: 25px;
+}
+.menu-block a{
+    color: black;
 }
