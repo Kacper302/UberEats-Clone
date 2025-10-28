@@ -173,7 +173,7 @@ height: 76px;
     
     color: black;
 }
-.block-container{
+.menu-container{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -201,3 +201,42 @@ height: 76px;
 .menu-block a{
     color: black;
 }
+.towns-container{
+    height: 80vh;
+    margin: 0 70px;
+}
+.towns-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.towns-header h2{
+     font-weight: 700;
+ font-size: 52px;
+ margin-bottom: 20px;
+ 
+ 
+}
+.towns-header a{
+    color: black;
+    font-size: 28px;
+}
+.map-container{
+    width: 100%;
+    margin-top: 20px;
+}
+.towns-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+    font-size: 23px;
+    margin-top: 25px;
+    grid-auto-flow: column;
+    
+}
+.town{
+    cursor: pointer;
+}
+    
+
