@@ -1,6 +1,6 @@
 .towns-section, .countries-section{
     height: auto;
-    margin: 0 70px;
+    margin: 0 5%;
      margin-bottom: 80px;
      
 }
@@ -55,11 +55,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(16, 1fr);
     grid-auto-flow: column;
+    gap: 65px;
 }
 
 .towns-list{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-auto-flow: column;
+    gap: 45px;
 }
  }
