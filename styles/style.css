@@ -30,10 +30,39 @@ z-index: 1;
     width: 25%;
     height: 35%;
     border-radius: 25px;
-    
-
 }
 
+@media only screen and (max-width: 768px) {
+    .overlay-content{
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        height: auto;
+        min-height: 40%;
+        padding: 20px;
+    }
+}
 
-
+@media only screen and (max-width: 480px) {
+    .overlay-content{
+        top: 15%;
+        left: 5%;
+        width: 90%;
+        padding: 18px;
+        border-radius: 20px;
+    }
     
+    .overlay-content h2{
+        font-size: 1.5em;
+    }
+    
+    .overlay-content button{
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .overlay-content select{
+        font-size: 16px;
+        padding: 10px;
+    }
+}
