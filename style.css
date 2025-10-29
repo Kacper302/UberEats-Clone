@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: Sans-serif;
 }
-body{
-    height: 300vh;
-}
+
 nav{
     width: 100%;
     background-color: transparent;
@@ -153,7 +151,7 @@ height: 76px;
     margin-right: 8px;
 }
 .hidden{
-    display: none;
+    visibility: hidden;
 }
 .order-button{
     height: 76px;
@@ -174,7 +172,9 @@ height: 76px;
 }
 .paragraph-Login{
     margin: 25px;
-    font-size: 20px;
+    font-size: 23px;
+
+    margin-top: 0;
 }
 
 .paragraph-Login a{
