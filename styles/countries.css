@@ -2,6 +2,7 @@
     height: auto;
     margin: 0 70px;
      margin-bottom: 80px;
+     
 }
 .towns-header, .countries-header{
     display: flex;
@@ -48,3 +49,17 @@
     margin-top: 25px;
     grid-auto-flow: column;
 }
+ @media only screen and (max-width: 750px){
+.countries-list{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-auto-flow: column;
+}
+
+.towns-list{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-auto-flow: column;
+}
+ }
