@@ -67,3 +67,69 @@ nav{
     display: none;
     transition: display 0.3s ease-in-out 1s;
 }
+
+@media only screen and (max-width: 768px) {
+    nav{
+        height: 9vh;
+        padding: 0 10px;
+    }
+    
+    .span-menu{
+        margin-left: 10px;
+    }
+    
+    .span-register{
+        margin-right: 10px;
+    }
+    
+    .span-menu a{
+        font-size: 20px;
+    }
+    
+    .span-register a{
+        display: none;
+    }
+    
+    .btn-Login, .btn-register, .btn-location {
+        font-size: 16px;
+        padding: 8px 14px;
+        margin: 0 8px;
+    }
+    
+    .btn-menu{
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav{
+        height: 10vh;
+    }
+    
+    .span-menu a{
+        font-size: 18px;
+    }
+    
+    .btn-register{
+        display: none;
+    }
+    
+    .btn-Login{
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 0 5px;
+    }
+    
+    .btn-menu{
+        font-size: 20px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    
+    .btn-location{
+        display: block;
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
