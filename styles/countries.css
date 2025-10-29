@@ -49,19 +49,101 @@
     margin-top: 25px;
     grid-auto-flow: column;
 }
- @media only screen and (max-width: 750px){
-.countries-list{
-     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    grid-auto-flow: column;
-    gap: 65px;
+
+@media only screen and (max-width: 768px) {
+    .towns-section, .countries-section{
+        margin: 0 3%;
+        margin-bottom: 50px;
+    }
+    
+    .towns-header, .countries-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .towns-header h2, .countries-header h2{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    .towns-header a, .countries-header a{
+        font-size: 20px;
+    }
+    
+    .map-container{
+        height: 350px;
+    }
+    
+    .towns-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 45px;
+        font-size: 20px;
+    }
+    
+    .countries-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+        gap: 65px;
+        font-size: 20px;
+    }
 }
 
-.towns-list{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-auto-flow: column;
-    gap: 45px;
+@media only screen and (max-width: 600px) {
+    .towns-section, .countries-section{
+        margin: 0 5%;
+        margin-bottom: 40px;
+    }
+    
+    .towns-header h2, .countries-header h2{
+        font-size: 32px;
+    }
+    
+    .towns-header a, .countries-header a{
+        font-size: 18px;
+    }
+    
+    .map-container{
+        height: 300px;
+    }
+    
+    .towns-list{
+        gap: 35px;
+        font-size: 19px;
+    }
+    
+    .countries-list{
+        gap: 50px;
+        font-size: 19px;
+    }
 }
- }
+
+@media only screen and (max-width: 480px) {
+    .towns-section, .countries-section{
+        margin: 0 4%;
+        margin-bottom: 35px;
+    }
+    
+    .towns-header h2, .countries-header h2{
+        font-size: 28px;
+    }
+    
+    .towns-header a, .countries-header a{
+        font-size: 16px;
+    }
+    
+    .map-container{
+        height: 250px;
+    }
+    
+    .towns-list{
+        gap: 30px;
+        font-size: 18px;
+    }
+    
+    .countries-list{
+        gap: 40px;
+        font-size: 18px;
+    }
+}
