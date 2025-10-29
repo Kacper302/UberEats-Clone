@@ -15,7 +15,7 @@ nav{
     justify-content: space-between;
     position: fixed;
     align-items: center;
-
+    transition: background-color 0.2s ease-in-out;
 }
 .btn-menu{
     background-color: transparent;
@@ -25,6 +25,9 @@ nav{
     cursor: pointer;
     font-size: 25px;
     margin-left:25px ;
+    &:hover{
+    box-shadow: -1px 5px 47px 0px rgba(0,0,0,0.75);
+    }
 }
 .span-menu{
     margin-left: 25px;
@@ -44,7 +47,7 @@ nav{
     font-weight: 600;
     font-size: 26px;
 }
-.btn-Login, .btn-register {
+.btn-Login, .btn-register,.btn-location {
     height: auto;
     padding: 10px 20px;
     margin-left: 10px;
@@ -61,12 +64,16 @@ nav{
         background-color: rgb(235, 227, 227);
     }
 }
-.btn-register{
+.btn-register, .btn-location{
     color: white;
     background-color: black;
     &:hover{
         background-color: rgb(65, 63, 63);
     }
+}
+.btn-location{
+    display: none;
+    transition: display 0.8s ease-in-out;
 }
 header{
     height: 100vh;
@@ -282,6 +289,9 @@ footer{
     justify-content: space-between;
     margin-bottom: 35px;
 }
+.logos img{
+    cursor: pointer;
+}
 .download-apps img{
     width: 120px;
     height: 70px;
@@ -301,7 +311,7 @@ footer{
 }
 .info-list li{
     list-style-type: none;
-    font-size: 26px;
+    font-size: 1.4em;
    margin-bottom: 24px;
      &:hover{
         cursor: pointer;
