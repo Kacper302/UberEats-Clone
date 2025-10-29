@@ -1,0 +1,50 @@
+.towns-section, .countries-section{
+    height: auto;
+    margin: 0 70px;
+     margin-bottom: 80px;
+}
+.towns-header, .countries-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   
+}
+.towns-header h2, .countries-header h2{
+     font-weight: 700;
+ font-size: 52px;
+ margin-bottom: 20px;
+ 
+ 
+}
+.towns-header a, .countries-header a{
+    color: black;
+    font-size: 28px;
+}
+.map-container{
+    width: 100%;
+    margin-top: 20px;
+}
+.towns-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+    font-size: 23px;
+    margin-top: 25px;
+    grid-auto-flow: column;
+   
+    
+    
+}
+.town, .country{
+    cursor: pointer;
+}
+.countries-list{
+     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 30px;
+    font-size: 23px;
+    margin-top: 25px;
+    grid-auto-flow: column;
+}

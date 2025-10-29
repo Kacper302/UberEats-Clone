@@ -1,0 +1,68 @@
+nav{
+    width: 100%;
+    background-color: transparent;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+.btn-menu{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left:25px ;
+    &:hover{
+    box-shadow: -1px 5px 47px 0px rgba(0,0,0,0.75);
+    }
+}
+.span-menu{
+    margin-left: 25px;
+}
+.span-register{
+    margin-right: 25px;
+    
+}
+.span-menu, .span-register {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.span-menu a, .span-register a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 26px;
+}
+.btn-Login, .btn-register,.btn-location {
+    height: auto;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    margin:  0 25px;
+}
+.btn-Login{
+    color: black;
+    background-color: white ;
+    &:hover{
+        background-color: rgb(235, 227, 227);
+    }
+}
+.btn-register, .btn-location{
+    color: white;
+    background-color: black;
+    &:hover{
+        background-color: rgb(65, 63, 63);
+    }
+}
+.btn-location{
+    display: none;
+    transition: display 0.8s ease-in-out;
+}
