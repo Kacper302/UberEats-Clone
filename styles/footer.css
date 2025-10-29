@@ -90,3 +90,130 @@ footer{
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 768px) {
+    footer{
+        height: auto;
+        min-height: 55vh;
+    }
+    
+    .informations, .privacy{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .informations{
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .logos{
+        margin-bottom: 20px;
+    }
+    
+    .informations img{
+        height: 110px;
+        width: 180px;
+    }
+    
+    .download-apps{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .download-apps img{
+        width: 140px;
+        height: 55px;
+        margin-left: 0;
+    }
+    
+    .info-list-container{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .info-list{
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .info-list li{
+        font-size: 1.1em;
+        margin-bottom: 18px;
+    }
+    
+    .privacy{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    .privacy i{
+        font-size: 26px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    
+    .medias-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .privacy-links{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .privacy-links a{
+        font-size: 16px;
+        margin-right: 0;
+    }
+    
+    .privacy-info{
+        font-size: 18px;
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .informations img{
+        height: 90px;
+        width: 140px;
+    }
+    
+    .download-apps img{
+        width: 120px;
+        height: 48px;
+    }
+    
+    .info-list li{
+        font-size: 0.95em;
+        margin-bottom: 14px;
+    }
+    
+    .privacy i{
+        font-size: 22px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .privacy-links a{
+        font-size: 15px;
+    }
+    
+    .privacy-info{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    
+    .medias i:first-child{
+        margin-left: 0;
+    }
+}
