@@ -12,6 +12,9 @@ const overlay_order_now = document.querySelector('.overlay-order-now');
 const overlay_order = document.querySelector('.overlay-order');
 const overlay_location = document.querySelector('.overlay-location');
 
+const menu_btn = document.querySelector('.btn-menu');
+const sidebar= document.querySelector('.sidebar');
+
 
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
@@ -67,10 +70,16 @@ document.addEventListener('click', (e) => {
     overlay_background.classList.remove('active');
     overlay_location.style.display = 'none';
     overlay_order.style.display = 'none';
+     sidebar.style.display = "none";
     }
 })
 
 order_list[2].addEventListener('click', () => {
     overlay_background.classList.add('active');
      overlay_order.style.display = 'block';
+})
+
+menu_btn.addEventListener('click', () => {
+     overlay_background.classList.add('active');
+    sidebar.style.display = "block";
 })
