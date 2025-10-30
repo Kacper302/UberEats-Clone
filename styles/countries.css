@@ -90,34 +90,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .towns-section, .countries-section{
-        margin: 0 5%;
-        margin-bottom: 40px;
-    }
-    
-    .towns-header h2, .countries-header h2{
-        font-size: 32px;
-    }
-    
-    .towns-header a, .countries-header a{
-        font-size: 18px;
-    }
-    
-    .map-container{
-        height: 300px;
-    }
-    
-    .towns-list{
-        gap: 35px;
-        font-size: 19px;
-    }
-    
-    .countries-list{
-        gap: 50px;
-        font-size: 19px;
-    }
-}
 
 @media only screen and (max-width: 480px) {
     .towns-section, .countries-section{
