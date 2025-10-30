@@ -50,11 +50,11 @@
         flex-direction: column;
 }
 .overlay-order-select{
-    padding: 15px;
+    padding: 25px;
     outline: none;
     border: none;
     background-color: rgb(241, 237, 232);
-    border-radius: 7px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
