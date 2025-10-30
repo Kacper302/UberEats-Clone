@@ -1,60 +1,71 @@
-.sidebar{
+.sidebar {
     position: fixed;
     height: 100vh;
-    width: 17%;
+    width: 20%;
     z-index: 100;
     background-color: white;
     display: block;
     left: -500px;
     transition: left 0.3s ease-in-out;
 }
-.sidebar-content{
+
+.sidebar-content {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
 }
-.lower-content, .upper-content{
-z-index: 100;
+
+.lower-content,
+.upper-content {
+    z-index: 100;
 }
-.lower-content{
+
+.lower-content {
     display: flex;
     flex-direction: column;
 }
-.lower-content button{
+
+.lower-content button {
     padding: 10px;
     border-radius: 15px;
     border: none;
     background-color: rgb(228, 228, 228);
-    &:hover{
+
+    &:hover {
         background-color: rgb(214, 213, 213);
     }
 }
 
-.lower-content img{
+.lower-content img {
     width: 100px;
     height: 100px;
     float: left;
 }
-.lower-content p{
+
+.lower-content p {
     font-size: 1.2em;
     font-weight: 500;
 }
-.lower-content-apps{
+
+.lower-content-apps {
     display: flex;
 }
 
-.upper-content{
+.upper-content {
     display: flex;
     flex-direction: column;
 }
-.upper-content p, button{
+
+.upper-content p,
+button {
     font-size: 1.5em;
     margin: 10px;
     cursor: pointer;
 }
-.upper-content button{
+
+.upper-content button {
 
     border-radius: 10px;
     padding: 20px;
@@ -64,18 +75,66 @@ z-index: 100;
 
 }
 
-.sidebar-Login{
+.sidebar-Login {
     background-color: black;
     color: white;
-    &:hover{
+
+    &:hover {
         background-color: rgb(65, 63, 63);
     }
 }
-.sidebar-SignIn{
+
+.sidebar-SignIn {
     background-color: white;
     color: black;
-     
-    &:hover{
+
+    &:hover {
         background-color: rgb(238, 233, 233);
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 35%;
+    }
+
+    .lower-content p {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .upper-content p,
+    button {
+        font-size: 1.3em;
+        margin: 5px;
+    }
+
+    .upper-content button {
+
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
+
+}
+
+@media only screen and (max-width: 450px){
+    .sidebar {
+        width: 40%;
+    }
+    .upper-content p,
+    button {
+        font-size: 1em;
+        margin: 5px;
+    }
+    
+.lower-content img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
 }
