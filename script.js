@@ -1,7 +1,8 @@
 const navbar = document.querySelector('nav');
 const btn_location = document.querySelector('.btn-location');
 const order_list = document.querySelectorAll('.order-list');
-const order_list_container = document.querySelector('.order-list-container')
+const order_list_container = document.querySelector('.order-list-container');
+const overlay_background = document.querySelector('.overlay')
 console.log(window.scrollY);
 
 document.addEventListener('scroll', () => {
@@ -24,4 +25,9 @@ order_list[0].addEventListener('click', ()=> {
     order_list[1].classList.toggle('hidden');
     order_list[2].classList.toggle('hidden');
     
+})
+
+
+btn_location.addEventListener('click', () => {
+
 })

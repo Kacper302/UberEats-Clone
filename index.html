@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber Eats | Zamawiaj jedzenie, zakupy spożywcze i wiele więcej - z wygodną dostawą | Logowanie</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="overlay">
-        <div class="overlay-content">
+    <div class="overlay active">
+        <div class="overlay-order  overlay-content">
             <button><i class="fa-solid fa-x"></i></button>
             <h2>Wybierz godzinę</h2>
             <select></select>
@@ -21,6 +21,18 @@
             <button>Zaplanuj</button>
             <button>Dostarcz Teraz</button>
         </div>
+
+        <div class="overlay-location overlay-content"> 
+                 <div class="overlay-location-header">
+                    <h2>Wpisz adres dostawy</h2>
+                    <button><i class="fa-solid fa-x"></i></button>
+                 </div>
+                 <div class="input-adres-container">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <input type="text" placeholder="Wyszukaj adres">
+                 </div>
+        </div>
+
         </div>
     <nav>
 
