@@ -7,6 +7,9 @@ const order_list_container = document.querySelector('.order-list-container');
 const overlay_background = document.querySelector('.overlay');
 const overlay_cancel_btn = document.querySelector('.overlay-location-cancel');
 
+const overlay_order = document.querySelector('.overlay-order');
+const overlay_location = document.querySelector('.overlay-location');
+
 
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
@@ -33,13 +36,22 @@ order_list[0].addEventListener('click', ()=> {
 
 btn_location.addEventListener('click', () => {
   overlay_background.classList.add('active');
+  overlay_location.style.display = 'block';
+
 })
 overlay_cancel_btn.addEventListener('click', () => {
     overlay_background.classList.remove('active')
+     overlay_location.style.display = 'none';
 })
 
 document.addEventListener('click', (e) => {
     if(e.target == overlay_background){
-        overlay_background.classList.remove('active')
+    overlay_background.classList.remove('active')
+    overlay_location.style.display = 'none';
     }
+})
+
+order_list[2].addEventListener('click', () => {
+    overlay_background.classList.add('active');
+     overlay_order.style.display = 'block';
 })

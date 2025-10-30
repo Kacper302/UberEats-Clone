@@ -1,18 +1,21 @@
-.overlay{
+
+.overlay {
     width: 100%;
     height: 100%;
     position: fixed;
     display: none;
     z-index: -1;
 }
-.active{
-background-color: rgba(0,0,0,0.5);
-display: block;
-z-index: 1;
-}
-.overlay-content{
-    position: fixed;
+
+.active {
+    background-color: rgba(0,0,0,0.5);
     display: block;
+    z-index: 1;
+}
+
+
+.overlay-content {
+    position: fixed;
     top: 15%;
     left: 40%;
     background-color: #F3F3F3;
@@ -21,69 +24,117 @@ z-index: 1;
     height: auto;
     border-radius: 25px;
 }
-.overlay-location-header{
+
+
+.overlay-location-header {
     display: flex;
     justify-content: space-between;
 }
-.overlay-location{
+
+.overlay-location-header h2, 
+.overlay-order h2 {
+    font-size: 2.5em
+}
+
+
+.overlay-location, 
+.overlay-order { 
     display: flex;
     flex-direction: column;
+    display: none;
 }
-.overlay-location-header h2{
-    font-size: 2em
+.overlay-order-content{
+    margin: 7px;
+    display: flex;
+        flex-direction: column;
 }
-.overlay-location-header button{
+.overlay-order-select{
+    padding: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(241, 237, 232);
+    border-radius: 7px;
+    cursor: pointer;
+}
+.overlay-order-content button{
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+.overlay-order-plan{
+    background-color: black;
+    color: white;
+    &:hover{
+        background-color: rgb(65, 63, 63);
+    }
+}
+.overlay-order-now{
+    background-color: white;
+    color: black;
+     
+    &:hover{
+        background-color: rgb(255, 253, 253);
+    }
+}
+
+.overlay-location-cancel, 
+.overlay-order-cancel {
     border: none;
     padding: 5px;
     border-radius: 50%;
     font-size: 1.5em;
     cursor: pointer;
-    &:hover{
-        &:hover{
+}
+
+.overlay-location-cancel:hover,
+.overlay-order-cancel:hover {
     box-shadow: -1px 3px 47px 0px rgba(0,0,0,0.75);
-    }
-    }
 }
-.input-adres-container input{
-    outline: none;
-    border: none;
-    background-color: transparent;
-    width: 100%;
-}
-.input-adres-container input{
-   font-size: 1.5em;
-}
-.input-adres-container i{
-    font-size: 1.3em;
-    margin-right: 5px;
-}
-.input-adres-container{
+
+
+.input-adres-container {
     display: flex;
     padding: 10px;
     border-radius: 25px;
     margin-bottom: 55px;
     margin-top: 20px;
-     width: 100%;
-     height: 100%;
-     background-color: rgb(236, 236, 236);
-     &:has(input:focus){
-        border: 2px solid black;
-     }
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+}
+
+.input-adres-container:has(input:focus) {
+    border: 2px solid black;
+}
+
+.input-adres-container input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.input-adres-container i {
+    font-size: 1.3em;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 768px) {
-    .overlay-content{
+    .overlay-content {
         top: 20%;
         left: 10%;
         width: 80%;
         height: auto;
-        
         padding: 24px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .overlay-content{
+    .overlay-content {
         top: 15%;
         left: 5%;
         width: 90%;
@@ -91,16 +142,16 @@ z-index: 1;
         border-radius: 20px;
     }
     
-    .overlay-content h2{
+    .overlay-content h2 {
         font-size: 1.5em;
     }
     
-    .overlay-content button{
+    .overlay-content button {
         font-size: 16px;
         padding: 12px;
     }
     
-    .overlay-content select{
+    .overlay-content select {
         font-size: 16px;
         padding: 10px;
     }
