@@ -70,7 +70,7 @@ document.addEventListener('click', (e) => {
     overlay_background.classList.remove('active');
     overlay_location.style.display = 'none';
     overlay_order.style.display = 'none';
-     sidebar.style.display = "none";
+     sidebar.style.left = "-500px";
     }
 })
 
@@ -81,5 +81,6 @@ order_list[2].addEventListener('click', () => {
 
 menu_btn.addEventListener('click', () => {
      overlay_background.classList.add('active');
-    sidebar.style.display = "block";
+    sidebar.style.left = '0'; 
+    
 })

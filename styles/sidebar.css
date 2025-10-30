@@ -4,7 +4,9 @@
     width: 17%;
     z-index: 100;
     background-color: white;
-    display: none;
+    display: block;
+    left: -500px;
+    transition: left 0.3s ease-in-out;
 }
 .sidebar-content{
     height: 100%;
