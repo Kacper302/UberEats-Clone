@@ -1,9 +1,12 @@
 const navbar = document.querySelector('nav');
 const btn_location = document.querySelector('.btn-location');
+
 const order_list = document.querySelectorAll('.order-list');
 const order_list_container = document.querySelector('.order-list-container');
-const overlay_background = document.querySelector('.overlay')
-console.log(window.scrollY);
+
+const overlay_background = document.querySelector('.overlay');
+const overlay_cancel_btn = document.querySelector('.overlay-location-cancel');
+
 
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
@@ -29,5 +32,14 @@ order_list[0].addEventListener('click', ()=> {
 
 
 btn_location.addEventListener('click', () => {
+  overlay_background.classList.add('active');
+})
+overlay_cancel_btn.addEventListener('click', () => {
+    overlay_background.classList.remove('active')
+})
 
+document.addEventListener('click', (e) => {
+    if(e.target == overlay_background){
+        overlay_background.classList.remove('active')
+    }
 })
