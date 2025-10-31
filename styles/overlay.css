@@ -56,7 +56,10 @@
     background-color: rgb(241, 237, 232);
     border-radius: 15px;
     cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 500;
 }
+
 
 
 .overlay-order-content button{

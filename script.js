@@ -15,6 +15,32 @@ const overlay_location = document.querySelector('.overlay-location');
 const menu_btn = document.querySelector('.btn-menu');
 const sidebar= document.querySelector('.sidebar');
 
+const dateList = document.querySelector('.overlay-order-select')
+
+function putDates() {
+    for (let i = 0; i < 7; i++) {
+    const date = new Date();
+    const weekDays = [
+        "niedz", "pon", "wt", "śr", "czw", "pt", "sob"
+    ];
+    const monthName = [
+    "sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"  
+    ];
+    date.setDate(date.getDate() + i);
+    const day = date.getDay();
+    const month = date.getMonth(); 
+
+    console.log(`${weekDays[day]}, ${date.getDate()} ${monthName[month]}`);
+    const option = document.createElement("option");
+   option.textContent = `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`;
+   option.setAttribute('value', `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`)
+   
+   dateList.appendChild(option)
+    }
+   
+    
+}
+putDates()
 
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
@@ -84,3 +110,4 @@ menu_btn.addEventListener('click', () => {
     sidebar.style.left = '0'; 
     
 })
+
