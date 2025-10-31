@@ -10,7 +10,7 @@ footer{
 .informations{
     border-top: 1px solid #ecebeb;
     border-bottom: 1px solid #ecebeb;
-    height: 35vh;
+    height: auto;
     display: flex;
 }
 .informations img{
@@ -80,6 +80,7 @@ footer{
 }
 .medias i{
     cursor: pointer;
+    font-size: 20px;
 }
 .privacy-info{
     margin-top: 35px;
