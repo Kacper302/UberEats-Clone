@@ -15,7 +15,8 @@ const overlay_location = document.querySelector('.overlay-location');
 const menu_btn = document.querySelector('.btn-menu');
 const sidebar= document.querySelector('.sidebar');
 
-const dateList = document.querySelector('.overlay-order-select')
+const dateList = document.querySelectorAll('.overlay-order-select')
+const overlay_order_plan = document.querySelector('.overlay-order-plan')
 
 function putDates() {
     for (let i = 0; i < 7; i++) {
@@ -35,7 +36,7 @@ function putDates() {
    option.textContent = `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`;
    option.setAttribute('value', `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`)
    
-   dateList.appendChild(option)
+   dateList[0].appendChild(option)
     }
    
     
@@ -67,6 +68,7 @@ order_list[0].addEventListener('click', ()=> {
 order_list[1].addEventListener('click', () => {
     order_list[1].classList.add('hidden');
     order_list[2].classList.add('hidden');
+    order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
 })
 
 btn_location.addEventListener('click', () => {
@@ -89,6 +91,7 @@ overlay_cancel_order.addEventListener('click', () => {
 overlay_order_now.addEventListener('click', () => {
      overlay_background.classList.remove('active')
      overlay_order.style.display = 'none';
+     order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
 })
 
 document.addEventListener('click', (e) => {
@@ -111,3 +114,12 @@ menu_btn.addEventListener('click', () => {
     
 })
 
+overlay_order_plan.addEventListener('click', () => {
+    const dateValue = dateList[0].value;
+    const hourValue = dateList[1].value;
+    console.log(dateValue,hourValue);
+    order_list[0].innerHTML = `${dateValue}<br> ${hourValue}`
+    overlay_background.classList.remove('active')
+    overlay_location.style.display = 'none';
+    overlay_order.style.display = 'none';
+})
