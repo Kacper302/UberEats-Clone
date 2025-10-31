@@ -37,11 +37,20 @@ function putDates() {
    option.setAttribute('value', `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`)
    
    dateList[0].appendChild(option)
-    }
-   
-    
+    } 
 }
 putDates()
+
+function closeAllOverlays(){
+    overlay_background.classList.remove('active')
+    overlay_location.style.display = 'none';
+    overlay_order.style.display = 'none';
+}
+
+function showOverlay(overlay){
+    overlay_background.classList.add('active');
+    overlay.style.display= 'block';
+}
 
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
@@ -115,13 +124,3 @@ overlay_order_plan.addEventListener('click', () => {
     closeAllOverlays();
 })
 
-function closeAllOverlays(){
-    overlay_background.classList.remove('active')
-    overlay_location.style.display = 'none';
-    overlay_order.style.display = 'none';
-}
-
-function showOverlay(overlay){
-    overlay_background.classList.add('active');
-    overlay.style.display= 'block';
-}
