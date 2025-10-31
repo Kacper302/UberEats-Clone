@@ -71,41 +71,34 @@ order_list[1].addEventListener('click', () => {
     order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
 })
 
+
 btn_location.addEventListener('click', () => {
-  overlay_background.classList.add('active');
-  overlay_location.style.display = 'block';
+  showOverlay(overlay_location)
 
 })
 overlay_cancel_location.addEventListener('click', () => {
-    overlay_background.classList.remove('active')
-     overlay_location.style.display = 'none';
+   closeAllOverlays();
 })
 overlay_cancel_order.addEventListener('click', () => {
-    overlay_background.classList.remove('active')
-     overlay_order.style.display = 'none';
-
+    closeAllOverlays();
      order_list[1].classList.add('hidden');
     order_list[2].classList.add('hidden');
 })
 
 overlay_order_now.addEventListener('click', () => {
-     overlay_background.classList.remove('active')
-     overlay_order.style.display = 'none';
+     closeAllOverlays();
      order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
 })
 
 document.addEventListener('click', (e) => {
     if(e.target == overlay_background){
-    overlay_background.classList.remove('active');
-    overlay_location.style.display = 'none';
-    overlay_order.style.display = 'none';
+    closeAllOverlays()
      sidebar.style.left = "-500px";
     }
 })
 
 order_list[2].addEventListener('click', () => {
-    overlay_background.classList.add('active');
-     overlay_order.style.display = 'block';
+    showOverlay(overlay_order)
 })
 
 menu_btn.addEventListener('click', () => {
@@ -119,7 +112,16 @@ overlay_order_plan.addEventListener('click', () => {
     const hourValue = dateList[1].value;
     console.log(dateValue,hourValue);
     order_list[0].innerHTML = `${dateValue}<br> ${hourValue}`
+    closeAllOverlays();
+})
+
+function closeAllOverlays(){
     overlay_background.classList.remove('active')
     overlay_location.style.display = 'none';
     overlay_order.style.display = 'none';
-})
+}
+
+function showOverlay(overlay){
+    overlay_background.classList.add('active');
+    overlay.style.display= 'block';
+}
