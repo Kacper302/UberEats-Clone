@@ -32,6 +32,7 @@
     border-radius: 15px;
     border: none;
     background-color: rgb(228, 228, 228);
+    margin: 10px;
 
     &:hover {
         background-color: rgb(214, 213, 213);
@@ -61,9 +62,13 @@
 .upper-content p,
 button {
     font-size: 1.5em;
-    margin: 10px;
+    
     cursor: pointer;
 }
+.upper-content p{
+    margin: 10px;
+}
+
 
 .upper-content button {
     border: none;
@@ -72,7 +77,7 @@ button {
     font-weight: 500;
     font-size: 1.5em;
     cursor: pointer;
-
+    margin: 5px;
 }
 
 .sidebar-Login {
