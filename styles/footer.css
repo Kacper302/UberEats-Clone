@@ -82,6 +82,9 @@ footer{
     cursor: pointer;
     font-size: 20px;
 }
+.medias{
+    display: flex;
+}
 .privacy-info{
     margin-top: 35px;
     font-size: 25px;
