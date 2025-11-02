@@ -10,7 +10,7 @@ footer{
 .informations{
     border-top: 1px solid #ecebeb;
     border-bottom: 1px solid #ecebeb;
-    height: auto;
+    height: 35vh;
     display: flex;
 }
 .informations img{
@@ -80,10 +80,6 @@ footer{
 }
 .medias i{
     cursor: pointer;
-    font-size: 20px;
-}
-.medias{
-    display: flex;
 }
 .privacy-info{
     margin-top: 35px;
@@ -99,38 +95,41 @@ footer{
     footer{
         height: auto;
         min-height: 55vh;
+        background-color: #f6f6f6;
     }
     
     .informations, .privacy{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
     
     .informations{
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
         height: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: none;
     }
     
     .logos{
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        gap: 15px;
     }
     
     .informations img{
-        height: 110px;
-        width: 180px;
+        height: 40px;
+        width: auto;
     }
     
     .download-apps{
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
     
     .download-apps img{
-        width: 140px;
-        height: 55px;
+        width: 135px;
+        height: 45px;
         margin-left: 0;
     }
     
@@ -139,85 +138,95 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        gap: 30px;
     }
     
     .info-list{
-        margin: 10px 0;
+        margin: 0;
         width: 100%;
     }
     
     .info-list li{
-        font-size: 1.1em;
-        margin-bottom: 18px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 400;
     }
     
     .privacy{
         height: auto;
         padding-bottom: 30px;
+        margin-top: 40px;
     }
     
     .privacy i{
-        font-size: 26px;
-        margin-left: 15px;
-        margin-right: 10px;
+        font-size: 24px;
+        margin-left: 0;
+        margin-right: 15px;
+    }
+    
+    .medias{
+        display: flex;
+        gap: 5px;
+        margin-bottom: 30px;
     }
     
     .medias-container{
         flex-direction: column;
-        gap: 20px;
+        gap: 25px;
     }
     
     .privacy-links{
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
     }
     
     .privacy-links a{
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 0;
+        color: #545454;
     }
     
     .privacy-info{
-        font-size: 18px;
+        font-size: 12px;
         margin-top: 25px;
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+        color: #545454;
+        line-height: 1.5;
+    }
+    
+    .reCAPTCHA-info{
+        display: block;
+        margin-bottom: 10px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .informations img{
-        height: 90px;
-        width: 140px;
+    .informations{
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
     
     .download-apps img{
-        width: 120px;
-        height: 48px;
+        width: 130px;
+        height: 43px;
     }
     
     .info-list li{
-        font-size: 0.95em;
-        margin-bottom: 14px;
+        font-size: 15px;
+        margin-bottom: 18px;
     }
     
     .privacy i{
         font-size: 22px;
-        margin-left: 8px;
-        margin-right: 8px;
     }
     
     .privacy-links a{
-        font-size: 15px;
+        font-size: 13px;
     }
     
     .privacy-info{
-        font-size: 15px;
-        margin-top: 20px;
-    }
-    
-    .medias i:first-child{
-        margin-left: 0;
+        font-size: 11px;
     }
 }
