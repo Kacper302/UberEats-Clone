@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 55vh;
+    height: auto;
 }
 .informations, .privacy{
     padding-left: 20%;
@@ -10,7 +10,7 @@ footer{
 .informations{
     border-top: 1px solid #ecebeb;
     border-bottom: 1px solid #ecebeb;
-    height: 35vh;
+    
     display: flex;
 }
 .informations img{
@@ -33,7 +33,7 @@ footer{
 .download-apps img{
     width: 120px;
     height: 70px;
-     margin-left: 10px;
+     
 }
 .info-list{
    display: flex;
@@ -77,6 +77,10 @@ footer{
 }
 .medias-container{
     display: flex;
+  
+}
+.medias{
+    display: flex;
 }
 .medias i{
     cursor: pointer;
@@ -117,10 +121,7 @@ footer{
         gap: 15px;
     }
     
-    .informations img{
-        height: 40px;
-        width: auto;
-    }
+    
     
     .download-apps{
         flex-direction: row;
