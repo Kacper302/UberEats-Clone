@@ -81,11 +81,13 @@ position: relative;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+   
     
 }
 .order-list:first-child{
     border-bottom: 1px solid #d4d4d4;
 }
+
 .order-list:nth-child(2):hover,.order-list:nth-child(3):hover{
     background-color: #F3F3F3;
 }
@@ -174,6 +176,7 @@ position: relative;
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        
     }
     
     .input-container{
@@ -200,6 +203,10 @@ position: relative;
         width: 100%;
         height: 60px;
         font-size: 16px;
+        
+    }
+    .order-list:nth-child(2),.order-list:nth-child(3){
+        display: none !important;
     }
     
     .order-button{
