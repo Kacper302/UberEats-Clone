@@ -15,14 +15,27 @@ const overlay_location = document.querySelector('.overlay-location');
 
 const menu_btn = document.querySelector('.btn-menu');
 const sidebar= document.querySelector('.sidebar');
-
+const input_container_navbar = document.querySelector(".input-container-navbar-content")
 const dateList = document.querySelectorAll('.overlay-order-select');
 const overlay_order_plan = document.querySelector('.overlay-order-plan');
 const input_adres = document.querySelector(".input-container")
+const location_input = document.querySelector('.location-input')
 btn_LogIn.innerHTML = "<i class='fa-solid fa-user'></i>";
 
 putDates();
 putHours();
+
+
+document.addEventListener('scroll', () => {
+    let scrollY = window.scrollY;
+    if (scrollY > 30) {
+        location_input.style.display = 'block';
+    }
+    else{
+        location_input.style.display = 'none';
+    }
+})
+
  menu_btn.addEventListener('click', () => {
      overlay_background.classList.add('active');
     sidebar.style.left = '0'; 
@@ -62,5 +75,7 @@ overlay_order_now.addEventListener('click', () => {
      closeAllOverlays();
      order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
 })
-
+input_container_navbar.addEventListener('click', () => {
+    showOverlay(overlay_location)
+})
 }
