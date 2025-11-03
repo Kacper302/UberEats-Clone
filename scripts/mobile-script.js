@@ -21,6 +21,8 @@ const overlay_order_plan = document.querySelector('.overlay-order-plan');
 const input_adres = document.querySelector(".input-container")
 btn_LogIn.innerHTML = "<i class='fa-solid fa-user'></i>";
 
+putDates();
+putHours();
  menu_btn.addEventListener('click', () => {
      overlay_background.classList.add('active');
     sidebar.style.left = '0'; 
@@ -42,5 +44,23 @@ overlay_cancel_location.addEventListener('click', () => {
    closeAllOverlays();
 })
 
+order_list[0].addEventListener('click', () => {
+    showOverlay(overlay_order)
+})
+overlay_cancel_order.addEventListener('click', () => {
+    closeAllOverlays();
+
+})
+overlay_order_plan.addEventListener('click', () => {
+    const dateValue = dateList[0].value;
+    const hourValue = dateList[1].value;
+    console.log(dateValue,hourValue);
+    order_list[0].innerHTML = `${dateValue}<br> ${hourValue}`
+    closeAllOverlays();
+})
+overlay_order_now.addEventListener('click', () => {
+     closeAllOverlays();
+     order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
+})
 
 }
