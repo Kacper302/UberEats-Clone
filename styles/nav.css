@@ -73,14 +73,18 @@ nav{
     nav{
         height: 9vh;
         padding: 0 10px;
+        position: absolute;
+        background-color: transparent !important;
     }
     
     .span-menu{
         margin-left: 10px;
     }
     
+    
     .span-register{
         margin-right: 10px;
+        
     }
     
     .span-menu a{
@@ -88,13 +92,16 @@ nav{
     }
     
     .span-register a{
-        display: none;
+        font-size: 1.2em;
     }
     
     .btn-Login, .btn-register, .btn-location {
         font-size: 16px;
         padding: 8px 14px;
         margin: 0 8px;
+    }
+    .btn-location{
+        display: none !important;
     }
     
     .btn-menu{
@@ -112,8 +119,8 @@ nav{
         font-size: 18px;
     }
     
-    .btn-register{
-        display: none;
+  .span-register a{
+        font-size: 1.2em;
     }
     
     .btn-Login{
@@ -127,9 +134,10 @@ nav{
         margin-left: 5px;
         margin-right: 10px;
     }
-    
+    .span-register {
+        flex-direction: column-reverse;
+    }
     .btn-location{
-        display: block;
         font-size: 14px;
         padding: 6px 10px;
     }
