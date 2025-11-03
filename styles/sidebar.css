@@ -100,7 +100,7 @@ button {
 
 @media only screen and (max-width: 768px) {
     .sidebar {
-        width: 35%;
+        width: auto;
     }
 
     .lower-content p {
@@ -110,7 +110,7 @@ button {
 
     .upper-content p,
     button {
-        font-size: 1.3em;
+        font-size: 1em;
         margin: 5px;
     }
 
@@ -123,13 +123,14 @@ button {
     cursor: pointer;
 
 }
+  
 
 
 }
 
 @media only screen and (max-width: 450px){
     .sidebar {
-        width: 40%;
+        width: auto;
     }
     .upper-content p,
     button {
