@@ -36,7 +36,6 @@ function putDates() {
     const day = date.getDay();
     const month = date.getMonth(); 
 
-    console.log(`${weekDays[day]}, ${date.getDate()} ${monthName[month]}`);
     const option = document.createElement("option");
    option.textContent = `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`;
    option.setAttribute('value', `${weekDays[day]}, ${date.getDate()} ${monthName[month]}`)
@@ -44,7 +43,20 @@ function putDates() {
    dateList[0].appendChild(option)
     } 
 }
-putDates()
+function putHours() {
+    for (let h = 0; h < 24;h++) {
+    for (let m = 0; m < 60; m+= 30) {
+        const hours = h < 10 ? "0" + h : h;
+        const minutes = m < 10 ? "0" + m : m;
+        console.log(hours +":"+ minutes)
+         const option = document.createElement("option");
+   option.textContent = `${hours}:${minutes}`;
+   option.setAttribute('value', `${hours}:${minutes}`)
+    }
+}
+}
+putDates();
+putHours();
 
 
 
