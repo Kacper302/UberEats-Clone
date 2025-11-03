@@ -1,3 +1,8 @@
+import { closeAllOverlays, showOverlay } from "./overlay.js";
+
+
+
+
 const navbar = document.querySelector('nav');
 const btn_location = document.querySelector('.btn-location');
 
@@ -41,16 +46,7 @@ function putDates() {
 }
 putDates()
 
-function closeAllOverlays(){
-    overlay_background.classList.remove('active')
-    overlay_location.style.display = 'none';
-    overlay_order.style.display = 'none';
-}
 
-function showOverlay(overlay){
-    overlay_background.classList.add('active');
-    overlay.style.display= 'block';
-}
 
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
