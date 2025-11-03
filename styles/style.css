@@ -5,6 +5,7 @@
 @import url(menu.css);
 @import url(overlay.css);
 @import url(sidebar.css);
+@import url(app-section.css);
 *{
     margin: 0;
     padding: 0;

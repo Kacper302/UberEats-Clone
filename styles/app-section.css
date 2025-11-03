@@ -1,0 +1,28 @@
+.app-section{
+    width: 100%;
+    padding:  15px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.app-section img{
+    width: 75px;
+    height: 75px;
+}
+
+.app-section-content{
+    display: flex;
+    align-items: center;
+}
+.app-section-content p{
+    font-weight: 550;
+    font-size: 1.3em;
+}
+.app-button-download{
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
