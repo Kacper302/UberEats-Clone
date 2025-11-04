@@ -96,6 +96,18 @@ nav{
     outline: none;
     background-color: transparent;
 }
+@media only screen and (max-width: 1025px) {
+    .register-buttons{
+
+        display: flex;
+        
+    }
+    .span-register a{
+      font-size: 1em;
+      margin-right: 5px;
+    }
+    
+}
 @media only screen and (max-width: 768px) {
     nav{
         height: 9vh;

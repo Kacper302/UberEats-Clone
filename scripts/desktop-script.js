@@ -25,8 +25,6 @@ const overlay_order_plan = document.querySelector('.overlay-order-plan')
 putDates();
 putHours();
 
-
-
 document.addEventListener('scroll', () => {
     let scrollY = window.scrollY;
     if (scrollY > 30) {
