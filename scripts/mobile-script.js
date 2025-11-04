@@ -1,7 +1,6 @@
 import { closeAllOverlays, showOverlay, putDates, putHours } from "./overlay.js";
 
 export function initMobile(){
-    const navbar = document.querySelector('nav');
     const btn_LogIn = document.querySelector('.btn-Login')
 const order_list = document.querySelectorAll('.order-list');
 
@@ -20,6 +19,7 @@ const dateList = document.querySelectorAll('.overlay-order-select');
 const overlay_order_plan = document.querySelector('.overlay-order-plan');
 const input_adres = document.querySelector(".input-container")
 const location_input = document.querySelector('.location-input')
+
 btn_LogIn.innerHTML = "<i class='fa-solid fa-user'></i>";
 
 putDates();
@@ -35,18 +35,17 @@ document.addEventListener('scroll', () => {
         location_input.style.display = 'none';
     }
 })
-
- menu_btn.addEventListener('click', () => {
-     overlay_background.classList.add('active');
-    sidebar.style.left = '0'; 
-    
-})
-
 document.addEventListener('click', (e) => {
     if(e.target == overlay_background){
     closeAllOverlays()
      sidebar.style.left = "-500px";
     }
+})
+
+ menu_btn.addEventListener('click', () => {
+     overlay_background.classList.add('active');
+    sidebar.style.left = '0'; 
+    
 })
 
 input_adres.addEventListener('click', () => {
@@ -57,13 +56,15 @@ overlay_cancel_location.addEventListener('click', () => {
    closeAllOverlays();
 })
 
-order_list[0].addEventListener('click', () => {
-    showOverlay(overlay_order)
-})
 overlay_cancel_order.addEventListener('click', () => {
     closeAllOverlays();
 
 })
+
+order_list[0].addEventListener('click', () => {
+    showOverlay(overlay_order)
+})
+
 overlay_order_plan.addEventListener('click', () => {
     const dateValue = dateList[0].value;
     const hourValue = dateList[1].value;
