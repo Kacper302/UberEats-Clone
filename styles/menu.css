@@ -1,70 +1,72 @@
-.menu-container{
+.menu-container {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 150px 0;
-    
+
 }
-.menu-block{
+
+.menu-block {
     width: 30%;
     margin: 0 20px;
     cursor: pointer;
 }
 
-.menu-block img{
+.menu-block img {
     width: 100%;
 }
 
-.menu-block h2{
- font-weight: 700;
- font-size: 35px;
- margin-bottom: 20px;
+.menu-block h2 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
-.menu-block p{
+.menu-block p {
     font-size: 25px;
 }
-.menu-block a{
+
+.menu-block a {
     color: black;
 }
 
 @media only screen and (max-width: 768px) {
-    .menu-container{
+    .menu-container {
         padding: 80px 20px;
         gap: 30px;
         flex-direction: column;
     }
-    
-    .menu-block{
+
+    .menu-block {
         width: 100%;
         margin: 0;
     }
-    
-    .menu-block h2{
+
+    .menu-block h2 {
         font-size: 24px;
         margin-bottom: 12px;
     }
-    
-    .menu-block p{
+
+    .menu-block p {
         font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .menu-container{
+    .menu-container {
         padding: 50px 15px;
         gap: 35px;
     }
-    
-    .menu-block{
+
+    .menu-block {
         width: 100%;
     }
-    
-    .menu-block h2{
+
+    .menu-block h2 {
         font-size: 24px;
     }
-    
-    .menu-block p{
+
+    .menu-block p {
         font-size: 18px;
     }
 }

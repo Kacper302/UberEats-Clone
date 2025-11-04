@@ -1,31 +1,40 @@
-.towns-section, .countries-section{
+.towns-section,
+.countries-section {
     height: auto;
     margin: 0 5%;
-     margin-bottom: 80px;
-     
+    margin-bottom: 80px;
+
 }
-.towns-header, .countries-header{
+
+.towns-header,
+.countries-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-   
+
 }
-.towns-header h2, .countries-header h2{
-     font-weight: 700;
- font-size: 52px;
- margin-bottom: 20px;
- 
- 
+
+.towns-header h2,
+.countries-header h2 {
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 20px;
+
+
 }
-.towns-header a, .countries-header a{
+
+.towns-header a,
+.countries-header a {
     color: black;
     font-size: 28px;
 }
-.map-container{
+
+.map-container {
     width: 100%;
     margin-top: 20px;
 }
-.towns-list{
+
+.towns-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -33,15 +42,18 @@
     font-size: 23px;
     margin-top: 25px;
     grid-auto-flow: column;
-   
-    
-    
+
+
+
 }
-.town, .country{
+
+.town,
+.country {
     cursor: pointer;
 }
-.countries-list{
-     display: grid;
+
+.countries-list {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 30px;
@@ -51,34 +63,39 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .towns-section, .countries-section{
+
+    .towns-section,
+    .countries-section {
         margin: 0 5%;
         margin-bottom: 50px;
     }
-    
-    .towns-header, .countries-header{
+
+    .towns-header,
+    .countries-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
-    
-    .towns-header h2, .countries-header h2{
+
+    .towns-header h2,
+    .countries-header h2 {
         font-size: 28px;
         margin-bottom: 5px;
         font-weight: 700;
     }
-    
-    .towns-header a, .countries-header a{
+
+    .towns-header a,
+    .countries-header a {
         font-size: 16px;
         text-decoration: underline;
     }
-    
-    .map-container{
+
+    .map-container {
         height: 300px;
         margin-top: 15px;
     }
-    
-    .towns-list{
+
+    .towns-list {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         gap: 20px 40px;
@@ -86,8 +103,8 @@
         margin-top: 20px;
         grid-auto-flow: row;
     }
-    
-    .countries-list{
+
+    .countries-list {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         gap: 20px 40px;
@@ -98,29 +115,33 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .towns-section, .countries-section{
+
+    .towns-section,
+    .countries-section {
         margin: 0 4%;
         margin-bottom: 40px;
     }
-    
-    .towns-header h2, .countries-header h2{
+
+    .towns-header h2,
+    .countries-header h2 {
         font-size: 24px;
     }
-    
-    .towns-header a, .countries-header a{
+
+    .towns-header a,
+    .countries-header a {
         font-size: 15px;
     }
-    
-    .map-container{
+
+    .map-container {
         height: 250px;
     }
-    
-    .towns-list{
+
+    .towns-list {
         gap: 18px 30px;
         font-size: 15px;
     }
-    
-    .countries-list{
+
+    .countries-list {
         gap: 18px 30px;
         font-size: 15px;
     }
