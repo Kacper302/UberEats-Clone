@@ -14,7 +14,7 @@ Jest to replika głównej strony serwisu **Uber Eats**,która została odtworzon
 <img width="1809" height="800" alt="image" src="https://github.com/user-attachments/assets/e88e6d9b-e113-459a-81f4-72396ad4a2d4" />
 <img width="1772" height="973" alt="image" src="https://github.com/user-attachments/assets/69306611-b4b0-48b1-b5d8-f1810456d723" />
 <img width="420" height="906" alt="image" src="https://github.com/user-attachments/assets/5d8e1530-6cdd-4bf2-a8fa-36afce0acd88" />
-<img width="764" height="904" alt="image" src="https://github.com/user-attachments/assets/c8934acb-7d60-450a-83d5-5648be41e405" />
+<img width="420" height="906" alt="image" src="https://github.com/user-attachments/assets/c8934acb-7d60-450a-83d5-5648be41e405" />
 
 
 
