@@ -40,8 +40,7 @@
 
 .overlay-location, 
 .overlay-order { 
-    display: flex;
-    flex-direction: column;
+    
     display: none;
 }
 .overlay-order-content{
@@ -127,6 +126,11 @@
 .input-adres-container i {
     font-size: 1.3em;
     margin-right: 5px;
+}
+@media only screen and (max-width: 1024px){
+    .overlay-content{
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width: 768px) {

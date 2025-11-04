@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
 .app-section{
     width: 100%;
     padding:  15px;

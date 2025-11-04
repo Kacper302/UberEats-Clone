@@ -1,7 +1,7 @@
 .sidebar {
     position: fixed;
     height: 100vh;
-    width: 20%;
+    width: auto;
     z-index: 100;
     background-color: white;
     display: block;
@@ -99,9 +99,7 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-    .sidebar {
-        width: auto;
-    }
+   
 
     .lower-content p {
         font-size: 1em;
@@ -129,9 +127,7 @@ button {
 }
 
 @media only screen and (max-width: 450px){
-    .sidebar {
-        width: auto;
-    }
+    
     .upper-content p,
     button {
         font-size: 1em;
