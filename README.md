@@ -2,10 +2,10 @@
 
 ## Technologie:
 
--**HTML5**-Struktura Strony;
--**CSS**-FlexBox/grid/Style;
--**Javascript**-Interaktywność;
--**Media Queries**-Responsywność
+-**HTML5**-Struktura Strony; <br>
+-**CSS**-FlexBox/grid/Style; <br>
+-**Javascript**-Interaktywność; <br>
+-**Media Queries**-Responsywność; <br>
 
 ## Opis:
 Jest to replika głównej strony serwisu **Uber Eats**,która została odtworzona przy użyciu HTML ,CSS i Javascript bez użycia frameworków i bibliotek z dbałoscią o układ strony oraz z responsywnościa na urzadzenia **(Laptop,Tablet,Telefon)**
