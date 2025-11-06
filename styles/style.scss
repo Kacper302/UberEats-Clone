@@ -1,0 +1,15 @@
+@import 'nav';
+@import 'footer';
+@import 'countries';
+@import 'header';
+@import 'menu';
+@import 'overlay';
+@import 'sidebar';
+@import 'app-section';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
