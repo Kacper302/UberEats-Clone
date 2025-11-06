@@ -7,137 +7,125 @@
     display: block;
     left: -500px;
     transition: left 0.3s ease-in-out;
-}
 
-.sidebar-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-}
+    .sidebar-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
 
-.lower-content,
-.upper-content {
-    z-index: 100;
-}
+        .lower-content,
+        .upper-content {
+            z-index: 100;
+        }
 
-.lower-content {
-    display: flex;
-    flex-direction: column;
-}
+        .lower-content {
+            display: flex;
+            flex-direction: column;
 
-.lower-content button {
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: rgb(228, 228, 228);
-    margin: 10px;
+            button {
+                padding: 10px;
+                border-radius: 15px;
+                border: none;
+                background-color: rgb(228, 228, 228);
+                margin: 10px;
 
-    &:hover {
-        background-color: rgb(214, 213, 213);
-    }
-}
+                &:hover {
+                    background-color: rgb(214, 213, 213);
+                }
+            }
 
-.lower-content img {
-    width: 100px;
-    height: 100px;
-    float: left;
-}
+            img {
+                width: 100px;
+                height: 100px;
+                float: left;
 
-.lower-content p {
-    font-size: 1.2em;
-    font-weight: 500;
-}
+                @media only screen and (max-width: 450px) {
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                }
+            }
 
-.lower-content-apps {
-    display: flex;
-}
+            p {
+                font-size: 1.2em;
+                font-weight: 500;
 
-.upper-content {
-    display: flex;
-    flex-direction: column;
-}
+                @media only screen and (max-width: 768px) {
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+            }
 
-.upper-content p,
-button {
-    font-size: 1.5em;
+            &-apps {
+                display: flex;
+            }
 
-    cursor: pointer;
-}
+        }
 
-.upper-content p {
-    margin: 10px;
-}
+        .upper-content {
+            display: flex;
+            flex-direction: column;
 
+            p,
+            button {
+                font-size: 1.5em;
+                cursor: pointer;
 
-.upper-content button {
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    font-weight: 500;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin: 5px;
-}
+                @media only screen and (max-width: 768px) {
+                    font-size: 1em;
+                    margin: 5px;
+                }
 
-.sidebar-Login {
-    background-color: black;
-    color: white;
+                @media only screen and (max-width: 450px) {
+                    font-size: 1em;
+                    margin: 5px;
+                }
+            }
 
-    &:hover {
-        background-color: rgb(65, 63, 63);
-    }
-}
+            p {
+                margin: 10px;
+            }
 
-.sidebar-SignIn {
-    background-color: white;
-    color: black;
+            button {
+                border: none;
+                border-radius: 10px;
+                padding: 20px;
+                font-weight: 500;
+                font-size: 1.5em;
+                cursor: pointer;
+                margin: 5px;
 
-    &:hover {
-        background-color: rgb(238, 233, 233);
-    }
-}
+                @media only screen and (max-width: 768px) {
+                    border-radius: 10px;
+                    padding: 10px;
+                    font-weight: 500;
+                    font-size: 1.5em;
+                    cursor: pointer;
 
-@media only screen and (max-width: 768px) {
+                }
+            }
 
+            .sidebar-Login {
+                background-color: black;
+                color: white;
 
-    .lower-content p {
-        font-size: 1em;
-        font-weight: 500;
-    }
+                &:hover {
+                    background-color: rgb(65, 63, 63);
+                }
+            }
 
-    .upper-content p,
-    button {
-        font-size: 1em;
-        margin: 5px;
-    }
+            .sidebar-SignIn {
+                background-color: white;
+                color: black;
 
-    .upper-content button {
+                &:hover {
+                    background-color: rgb(238, 233, 233);
+                }
+            }
 
-        border-radius: 10px;
-        padding: 10px;
-        font-weight: 500;
-        font-size: 1.5em;
-        cursor: pointer;
-
-    }
-
-
-
-}
-
-@media only screen and (max-width: 450px) {
-
-    .upper-content p,
-    button {
-        font-size: 1em;
-        margin: 5px;
+        }
     }
 
-    .lower-content img {
-        width: 50px;
-        height: 50px;
-        float: left;
-    }
 }
