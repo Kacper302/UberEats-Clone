@@ -22,8 +22,12 @@
                 padding: 12px;
             }
         }
-        select{
-            
+
+        select {
+            @media only screen and (max-width: 480px) {
+                font-size: 16px;
+                padding: 10px;
+            }
         }
 
         @media only screen and (max-width: 1024px) {
@@ -161,11 +165,4 @@
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
     z-index: 100;
-}
-
-@media only screen and (max-width: 480px) {
-.overlay-content select {
-    font-size: 16px;
-    padding: 10px;
-}
 }

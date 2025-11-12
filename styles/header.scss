@@ -235,6 +235,8 @@ header {
             margin: 25px;
             font-size: 23px;
             margin-top: 0;
+            position: absolute;
+            top: 56%;
 
             @media only screen and (max-width: 768px) {
                 font-size: 18px;
