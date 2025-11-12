@@ -274,7 +274,7 @@ footer {
 }
 
 .privacy-links a {
-  margin-right: 15px;
+  margin-right: 20px;
   cursor: pointer;
   font-size: 16px;
 }
@@ -303,6 +303,14 @@ footer {
 .privacy-info a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+@media only screen and (max-width: 1024px) {
+  .informations,
+  .privacy {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -688,7 +696,11 @@ header {
 .paragraph-Login a {
   color: black;
 }
-
+@media only screen and (max-width: 1024px){
+ .order-container {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   header {
     align-items: flex-start;
