@@ -74,7 +74,7 @@ overlay_order_plan.addEventListener('click', () => {
 })
 overlay_order_now.addEventListener('click', () => {
      closeAllOverlays();
-     order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
+     order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-angle-down'></i></span>"
 })
 input_container_navbar.addEventListener('click', () => {
     showOverlay(overlay_location)

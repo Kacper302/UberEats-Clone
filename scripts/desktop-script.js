@@ -58,7 +58,7 @@ export function initDesktop() {
     order_list[1].addEventListener('click', () => {
         order_list[1].classList.add('hidden');
         order_list[2].classList.add('hidden');
-        order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
+        order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-angle-down'></i></span>"
     })
 
     order_list[2].addEventListener('click', () => {
@@ -81,7 +81,7 @@ export function initDesktop() {
 
     overlay_order_now.addEventListener('click', () => {
         closeAllOverlays();
-        order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-v'></i></span>"
+        order_list[0].innerHTML = "<i class='fa-solid fa-clock'></i> Dostarcz Teraz <span class='span-dropdown'><i class='fa-solid fa-angle-down'></i></span>"
     })
 
     overlay_order_plan.addEventListener('click', () => {
