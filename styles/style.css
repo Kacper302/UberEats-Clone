@@ -18,19 +18,19 @@ nav {
   border: none;
   margin-right: 25px;
   cursor: pointer;
-  font-size: 25px;
-  margin-left: 25px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 .btn-menu:hover {
   box-shadow: -1px 5px 47px 0px rgba(0, 0, 0, 0.75);
 }
 
 .span-menu {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .span-register {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .span-menu,
@@ -60,7 +60,7 @@ nav {
   border: none;
   font-weight: 500;
   font-size: 14px;
-  margin: 0 25px;
+  margin: 0 18px;
 }
 
 .btn-Login {
@@ -103,7 +103,7 @@ nav {
 }
 
 .input-container-navbar-content {
-  background-color: rgb(241, 236, 231);
+  background-color: rgba(231, 229, 227, 0.952);
   width: 100%;
   margin: 0 35px;
   padding: 10px 25px;
@@ -213,8 +213,8 @@ footer {
 }
 
 .informations img {
-  height: 120px;
-  width: 210px;
+  height: 100px;
+  width: 180px;
 }
 
 .download-apps {
@@ -235,7 +235,7 @@ footer {
 
 .download-apps img {
   width: 120px;
-  height: 70px;
+  height: 100%;
 }
 
 .info-list {
@@ -254,7 +254,7 @@ footer {
 
 .info-list li {
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 24px;
 }
 .info-list li:hover {
@@ -274,9 +274,9 @@ footer {
 }
 
 .privacy-links a {
-  margin-right: 20px;
+  margin-right: 25px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
 }
 .privacy-links a:hover {
   text-decoration: underline;
@@ -296,7 +296,7 @@ footer {
 
 .privacy-info {
   margin-top: 35px;
-  font-size: 18px;
+  font-size: 15px;
   display: flex;
 }
 
@@ -799,7 +799,7 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .menu-block {
