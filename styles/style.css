@@ -103,11 +103,11 @@ nav {
 }
 
 .input-container-navbar-content {
-  background-color: rgba(231, 229, 227, 0.952);
+  background-color: rgba(243, 239, 235, 0.767);
   width: 100%;
   margin: 0 35px;
   padding: 10px 25px;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: 600;
   border-radius: 10px;
 }
@@ -116,6 +116,7 @@ nav {
   border: none;
   outline: none;
   background-color: transparent;
+  font-size: 0.7em;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -584,7 +585,6 @@ header {
 }
 
 .input-container {
-  margin: 0;
   margin-left: 25px;
   background-color: white;
   width: 130%;
@@ -936,6 +936,7 @@ header {
 .overlay-order-now {
   background-color: white;
   color: black;
+  border: none;
 }
 .overlay-order-now:hover {
   background-color: rgb(238, 233, 233);
