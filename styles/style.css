@@ -417,11 +417,14 @@ footer {
 @media only screen and (max-width: 480px) {
   .informations {
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 65px;
   }
   .download-apps img {
     width: 130px;
     height: 43px;
+  }
+  .download-apps img:nth-child(2){
+    height: 55px;
   }
   .info-list li {
     font-size: 15px;
@@ -489,7 +492,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr);
   gap: 30px;
-  font-size: 18px;
+  font-size: 19px;
   margin-top: 25px;
   grid-auto-flow: column;
 }
@@ -807,7 +810,7 @@ header {
   }
   .header-container p {
   font-size: 15px;
-  margin-top: 30px;
+  margin-top: 35px;
   font-weight: 500;
 }
 }
@@ -873,7 +876,7 @@ header {
   }
   .menu-block p {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 550;
   }
 }
 .overlay {
@@ -998,7 +1001,7 @@ header {
 
 .input-adres-container i {
   font-size: 1.3em;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1045,7 +1048,12 @@ header {
   .overlay-location-header h2{
     font-size: 1.8em;
   }
-  
+  .input-adres-container:has(input:focus) {
+  border: none;
+}
+  .input-adres-container input {
+    font-size: 1.2em;
+  }
 }
 .sidebar {
   position: fixed;
@@ -1080,12 +1088,10 @@ header {
   padding: 10px;
   border-radius: 15px;
   border: none;
-  background-color: rgb(228, 228, 228);
+  background-color: #F3F3F3;
   margin: 10px;
 }
-.lower-content button:hover {
-  background-color: rgb(214, 213, 213);
-}
+
 
 .lower-content img {
   width: 80px;
@@ -1223,6 +1229,14 @@ button {
   .app-section img {
     border-radius: 20px;
   }
+  .lower-content-apps{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .lower-content-apps button:first-child{
+    display: none;
+
+  } 
 }
 * {
   margin: 0;
